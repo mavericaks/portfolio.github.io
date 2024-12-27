@@ -153,7 +153,7 @@
                  <li><strong>Maintaining balance: </strong> In real-world scenarios, BSTs might become unbalanced due to frequent insertions or deletions of specific values, leading to degraded performance.</li>
                  <li><strong> Memory usage:</strong>  Depending on the implementation, BSTs can consume significant memory, especially for large datasets.</li>
                  <li><strong> Handling duplicates:</strong>  Deciding how to handle duplicate values (allow them, ignore them, or store them in a specific way) can impact the implementation and performance.</li>
-            <h4=3><strong>@How to decide on most efficient approach for complex problems?</strong></h3>
+            <h3><strong>@How to decide on most efficient approach for complex problems?</strong></h3>
                  <li><strong>Consider data distribution:</strong>  If the data is relatively random, a standard BST might be sufficient. However, if the data has a skewed distribution, a self-balancing BST (like AVL or Red-Black tree) might be necessary to maintain good performance.</li>
                  <li><strong> Frequency of operations:</strong>  If insertions and deletions are frequent, a self-balancing BST is generally preferred. If primarily searching, a simpler BST might be adequate.</li>
                  <li><strong> Memory constraints:</strong>  If memory is a concern, consider alternatives like hash tables or tries, which might offer better space efficiency in some cases.</li>    
@@ -169,11 +169,11 @@
                     <li><strong>Conceptual Differences:</strong> Grasping the fundamental difference between the depth-first (go deep before exploring siblings) and breadth-first (explore all neighbors at the same level first) approaches can be tricky initially.</li>
                     <li><strong> Recursion vs. Iteration:</strong> DFS is often implemented recursively, which can be challenging for beginners to understand. BFS, while generally more intuitive, might require a deeper understanding of queues for efficient implementation.</li>
                     <li> <strong>Visualizing Traversal:</strong> It's crucial to visualize the order in which nodes are visited during the traversal. This can be difficult to do mentally, especially for larger or more complex graphs.</li>
-             <h3><li><strong>@What are challenges when applying to real world?</strong></h3>
+             <h3><strong>@What are challenges when applying to real world?</strong></h3>
                       <li><strong>Choosing the Right Algorithm:</strong> Determining which algorithm (DFS or BFS) is most suitable for a specific problem can be challenging. Factors like the nature of the problem (e.g., finding shortest paths vs. finding connected components) and the graph's structure play a crucial role.</li>
                       <li><strong> Memory Usage:</strong> Both DFS and BFS can have memory implications, especially for large graphs. DFS, with its recursive nature, can potentially lead to stack overflow issues.</li>
                       <li> <strong>Handling Cycles: </strong></strong>Detecting and handling cycles in a graph can be important, especially for algorithms like topological sort that rely on acyclic graphs.</li>
-             <h3><li><strong>@How to decide on most efficient approach for complex problems?</strong></h3>
+             <h3><strong>@How to decide on most efficient approach for complex problems?</strong></h3>
                         <li> <strong>Shortest Path: </strong>BFS is generally more suitable for finding the shortest path in unweighted graphs.</li>
                         <li>  <strong>Connected Components:</strong> DFS can be used to efficiently identify connected components within a graph.</li>
                         <li> <strong> Topological Sort:</strong> DFS is commonly used for topological sorting in directed acyclic graphs (DAGs).</li>
@@ -185,20 +185,20 @@
         <h2>6.Heap</h2>
         <ul>
             <li><strong>Heap as a Data Structure:</strong> A heap is a complete binary tree where each parent node satisfies the heap property (max-heap or min-heap).</li>
-            <li><strong>@What are challenges involved in understanding this concept?</strong></li>
-                       <li> #.Conceptual grasp of priority queues: Understanding the concept of a priority queue, where elements are extracted based on their priority, is crucial for understanding the purpose of a heap.</li>
-                       <li>  .Heap property: Grasping the specific heap property (max-heap or min-heap) and how it's maintained during operations like insertion and deletion can be challenging.</li>
-                       <li>  .Visualization: Visualizing the tree-based structure of a heap and how elements are arranged within it can be difficult, especially for larger heaps. </li>
-            <li><strong>@What are challenges when applying to real world?</strong> </li>
-                        <li>#.Choosing the right heap type: Selecting between max-heap and min-heap depends on the specific problem and the order in which elements need to be extracted.</li>
-                        <li> .Implementing efficient heap operations: Implementing heap operations (insertion, deletion, finding the maximum/minimum) efficiently requires careful consideration of the underlying data structures and algorithms.</li>
-                        <li> .Handling dynamic changes: In real-world scenarios, the heap might need to be dynamically resized or adjusted to accommodate changes in data size or priority.</li>
-            <li><strong>@How to decide on most efficient approach for complex problems?</strong> </li>
-                        <li>#.Priority Queues: Heaps are the ideal data structure for implementing priority queues in various applications (e.g., scheduling tasks, Dijkstra's algorithm).</li>
-                        <li> .Sorting: Heap sort is an efficient sorting algorithm that uses a heap to efficiently extract elements in sorted order.</li>
-                        <li> .Graph algorithms: Heaps are used in graph algorithms like Dijkstra's algorithm for finding the shortest paths in weighted graphs.</li>
-                        <li> .Time and space complexity: Heaps offer efficient time complexity for key operations (insertion, deletion, finding max/min) in O(log n) time. They also have reasonable space complexity.</li>
-                        <li> .Alternative data structures: Consider alternative data structures like balanced binary search trees (e.g., AVL trees, Red-Black trees) if the specific problem requires more complex operations or if the heap property needs to be more dynamically adjusted. </li>
+            <h3><strong>@What are challenges involved in understanding this concept?</strong></h3>
+                       <li> <strong>Conceptual grasp of priority queues:</strong> Understanding the concept of a priority queue, where elements are extracted based on their priority, is crucial for understanding the purpose of a heap.</li>
+                       <li>  <strong>Heap property:</strong> Grasping the specific heap property (max-heap or min-heap) and how it's maintained during operations like insertion and deletion can be challenging.</li>
+                       <li>  <strong>Visualization:</strong> Visualizing the tree-based structure of a heap and how elements are arranged within it can be difficult, especially for larger heaps. </li>
+            <h3><strong>@What are challenges when applying to real world?</strong> </h3>
+                        <li><strong>Choosing the right heap type:</strong> Selecting between max-heap and min-heap depends on the specific problem and the order in which elements need to be extracted.</li>
+                        <li> <strong>Implementing efficient heap operations:</strong> Implementing heap operations (insertion, deletion, finding the maximum/minimum) efficiently requires careful consideration of the underlying data structures and algorithms.</li>
+                        <li> <strong>Handling dynamic changes:</strong> In real-world scenarios, the heap might need to be dynamically resized or adjusted to accommodate changes in data size or priority.</li>
+            <h3><strong>@How to decide on most efficient approach for complex problems?</strong> </h3>
+                        <li><strong>Priority Queues:</strong> Heaps are the ideal data structure for implementing priority queues in various applications (e.g., scheduling tasks, Dijkstra's algorithm).</li>
+                        <li> <strong>Sorting:</strong> Heap sort is an efficient sorting algorithm that uses a heap to efficiently extract elements in sorted order.</li>
+                        <li> <strong>Graph algorithms:</strong> Heaps are used in graph algorithms like Dijkstra's algorithm for finding the shortest paths in weighted graphs.</li>
+                        <li> <strong>Time and space complexity: </strong>Heaps offer efficient time complexity for key operations (insertion, deletion, finding max/min) in O(log n) time. They also have reasonable space complexity.</li>
+                        <li> <strong>Alternative data structures:</strong> Consider alternative data structures like balanced binary search trees (e.g., AVL trees, Red-Black trees) if the specific problem requires more complex operations or if the heap property needs to be more dynamically adjusted. </li>
             
         </ul>
 
